@@ -1,0 +1,38 @@
+//========= Primary Key =================
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
+
+//========= Member Variable =================
+
+
+
+
+//========= Relationships =================
+
+
+//========= Constructors =================
+
+
+
+//========= Data Creation Trackers =================
+
+	@Column(updatable=false)
+	@DateTimeFormat(pattern = "yyyy-MM-dd")
+	private Date createdAt;
+	@DateTimeFormat(pattern = "yyyy-MM-dd")
+	private Date updatedAt ;
+	
+
+
+//========= Data Creation Event ==============
+	@PrePersist
+	protected void onCreate() {
+		this.createdAt = new Date();
+	}
+	@PreUpdate
+	protected void onUpdate() {
+		this.updatedAt = new Date();
+	}
+//========= Getters & Setters =================

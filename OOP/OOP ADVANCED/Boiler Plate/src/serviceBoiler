@@ -1,0 +1,34 @@
+@Service
+public class DogService {
+
+	@Autowired
+	private REPONAME repo;
+	
+	//========== Create/Update ============
+	public Dog save(Dog d) {
+		return repo.save(d);
+	}	
+	
+	//========== Read ============
+	public List<Dog> getAll(){
+		return repo.findAll();
+	}
+	
+	public Dog getOne(Long id) {
+		Optional<Dog> d = repo.findById(id);
+		if (d.isPresent()) {
+			return d.get();
+		}else {
+			return null;
+		}
+		
+	}
+	
+	//========== Delete ============
+	public void delete(Long id) {
+		repo.deleteById(id);
+	}
+	
+	//========== Relationships ============
+
+}

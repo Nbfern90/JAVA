@@ -1,0 +1,10 @@
+AbstractTextEditor.Color.Background.SystemDefault=false
+AbstractTextEditor.Color.SelectionBackground.SystemDefault=false
+AbstractTextEditor.Color.SelectionForeground.SystemDefault=false
+STS4BootMarkerIndicationColor=44,67,20
+eclipse.preferences.version=1
+predarkestdark.AbstractTextEditor.Color.Background.SystemDefault=false
+predarkestdark.AbstractTextEditor.Color.Foreground.SystemDefault=false
+predarkestdark.AbstractTextEditor.Color.SelectionBackground.SystemDefault=false
+predarkestdark.AbstractTextEditor.Color.SelectionForeground.SystemDefault=false
+predarkestdark.filteredSearchResultIndicationColor=21,78,116
